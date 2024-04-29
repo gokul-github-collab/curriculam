@@ -1,32 +1,33 @@
 import React from 'react';
 import Card from "./Card.jsx";
+import {Link} from 'react-router-dom'
 const HomeCards = () => {
     return <section className="py-4">
         <div className="container-xl lg:container m-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
                 <Card>
-                    <h2 className="text-2xl font-bold">For Developers</h2>
+                    <h2 className="text-2xl font-bold">Explore UG and PG programs</h2>
                     <p className="mt-2 mb-4">
-                        Browse our React jobs and start your career today
+                        Browse our graduate programs or postgraduate degrees.
                     </p>
-                    <a
-                        href="/jobs.html"
+                    <Link
+                        to="/jobs"
                         className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
                     >
-                        Browse Jobs
-                    </a>
+                        Browse courses
+                    </Link>
                 </Card>
                 <Card bg={'bg-indigo-100'} >
-                    <h2 className="text-2xl font-bold">For Employers</h2>
+                    <h2 className="text-2xl font-bold">For Admin's</h2>
                     <p className="mt-2 mb-4">
-                        List your job to find the perfect developer for the role
+                        New programs for excellence
                     </p>
-                    <a
-                        href="/add-job.html"
+                    <Link
+                        to="/add-job"
                         className="inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
                     >
-                        Add Job
-                    </a>
+                        Add Programs
+                    </Link>
                 </Card>
             </div>
         </div>
